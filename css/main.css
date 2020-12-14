@@ -30,8 +30,7 @@ a {
 
 .footer-container {
     grid-area: footer;
-    border: 1px solid yellow;
-    background-color: yellow;
+    background-color: #1b4332;
 }
 /* Main nav-bar */
 
@@ -119,6 +118,8 @@ button:hover {
     background-image: url("../images/mtbaldy.jpeg");
     background-size: cover;
     height: 300px;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
 }
 
 .card-title {
@@ -129,4 +130,23 @@ button:hover {
 .card-description {
     text-align: left;
     letter-spacing: 1px;
+}
+
+/* footer section */
+
+.footer-nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.social-item {
+    color: #40916c;
+}
+
+.copyright {
+    color: #40916c;
+    text-align: center;
+    margin-bottom: 1rem;
 }
