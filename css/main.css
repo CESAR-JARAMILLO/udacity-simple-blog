@@ -4,6 +4,7 @@
 }
 
 body {
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -21,7 +22,6 @@ a {
 
 .header-container {
     grid-area: hd;
-    border: 1px solid blue;
 }
 
 .main-container {
@@ -98,6 +98,7 @@ button:hover {
     display: flex;
     color: white;
     justify-content: center;
+    text-align: center;
     padding-top: 1.5rem;
 }
 
