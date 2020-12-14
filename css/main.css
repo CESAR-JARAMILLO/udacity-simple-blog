@@ -3,11 +3,41 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "footer";
+    background-color: whitesmoke;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.header-container {
+    grid-area: hd;
+    border: 1px solid blue;
+}
+
+.main-container {
+    grid-area: main;
+}
+
+.footer-container {
+    grid-area: footer;
+    border: 1px solid yellow;
+    background-color: yellow;
+}
 /* Main nav-bar */
 
 .nav-list {
-    background-color: #D8F3DC;
-    box-shadow: 0 0 10px #cfd8dc;
+    background-color: #40916c;
+    box-shadow: 0 0 10px #40916c;
     border-radius: 0.2rem;
     padding: 1rem 0;
     display: flex;
@@ -17,7 +47,7 @@
 
 .nav-item {
     list-style: none;
-    margin: 0 1rem;
+    margin: 0 0.75rem;
     font-size: 0.85rem;
     letter-spacing: 1px;
 }
@@ -29,7 +59,7 @@
 }
 
 .nav-item a:hover {
-    color: #039d69;
+    color: #95D5B2;
 }
 
 /* .nav-item:first-child {
@@ -43,7 +73,7 @@
 
 button {
     background: none;
-    color: #40916C;
+    color: #1b4332;
     border: 2px solid;
     border-radius: 0.5em;
     padding: 0.5em 1.5em;
@@ -58,14 +88,45 @@ button:hover {
     cursor: pointer;
 }
 
-.main-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1rem;
+.banner {
+    background-image: url("../images/sunset.jpeg");
+    background-repeat: no-repeat;
+    height: 150px;
+    background-size: cover;
 }
 
-.main-grid div {
-    background: #D8F3DC;
-    padding: 1.5rem;
-    border-radius: 1rem;
+.banner h1 {
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+.blog-card {
+    display: flex;
+    height: 450px;
+    margin: 0.75rem 2.5rem;
+    border-radius: 0.5em;
+    background-color: #d8f3dc;
+}
+
+.blog-card p{
+    margin: 0.5rem 1.5rem;
+    color: black;
+}
+
+.card-img {
+    background-image: url("../images/mtbaldy.jpeg");
+    background-size: cover;
+    height: 300px;
+}
+
+.card-title {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.card-description {
+    text-align: left;
+    letter-spacing: 1px;
 }
