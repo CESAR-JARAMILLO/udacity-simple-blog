@@ -26,6 +26,7 @@ a {
 
 .main-container {
     grid-area: main;
+    margin: 50px auto;
 }
 
 .footer-container {
@@ -102,7 +103,52 @@ button:hover {
     padding-top: 1.5rem;
 }
 
-.blog-card {
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.card {
+    width: 80%;
+    background: #95D5B2;
+    margin: 0 auto 50px;
+    transition: 0.5s;
+    border-radius: 0.5rem;
+}
+
+.card-header {
+    background-image: url("../images/mtbaldy.jpeg");
+    background-size: cover;
+    height: 200px;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-body {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: 1rem;
+}
+
+.card-body .btn {
+    display: block;
+    color: #95D5B2;
+    text-align: center;
+    background: linear-gradient(to right, #40916c, #1b4332);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 0.5rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+/* .blog-card {
     display: flex;
     height: 470px;
     margin: 0.75rem 2.5rem;
@@ -131,7 +177,7 @@ button:hover {
 .card-description {
     text-align: center;
     letter-spacing: 1px;
-}
+} */
 
 /* footer section */
 
