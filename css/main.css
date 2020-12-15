@@ -104,7 +104,7 @@ button:hover {
 
 .blog-card {
     display: flex;
-    height: 450px;
+    height: 470px;
     margin: 0.75rem 2.5rem;
     border-radius: 0.5em;
     background-color: #d8f3dc;
@@ -129,7 +129,7 @@ button:hover {
 }
 
 .card-description {
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
 }
 
