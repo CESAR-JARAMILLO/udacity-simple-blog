@@ -92,8 +92,9 @@ button:hover {
 .banner {
     background-image: url("../images/sunset.jpeg");
     background-repeat: no-repeat;
-    height: 150px;
+    height: 9.375rem;
     background-size: cover;
+    background-position: center;
 }
 
 .banner h1 {
@@ -101,7 +102,7 @@ button:hover {
     color: white;
     justify-content: center;
     text-align: center;
-    padding-top: 1.5rem;
+    padding-top: 3.5rem;
 }
 
 .card-row {
@@ -170,7 +171,7 @@ button:hover {
     margin-bottom: 1rem;
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 600px) {
     .card {
         width: 40%;
     }
