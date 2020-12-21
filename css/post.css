@@ -1,0 +1,60 @@
+#post-body {
+    grid-template-areas: 
+    "hd"
+    "main"
+    "author"
+    "footer";
+}
+
+.blog-post {
+    width: 80%;
+}
+
+.author-container {
+    grid-area: author;
+    width: 80%;
+    margin: 0 auto 2rem;
+    background-color: #95D5B2;
+    border-radius: 0.5rem;
+}
+
+.author-pic {
+    display: flex;
+}
+
+.author-pic img {
+    margin: 1rem 0 0 1rem;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.author-name {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.author-info {
+    color: #1b4332;
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 3rem;
+}
+
+.author-description {
+    color: #1b4332;
+    width: 90%;
+    padding: 1rem 0 0 1rem;
+}
+
+.author-social ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    margin: 1rem;
+}
+
+.author-social a {
+    color: #1b4332;
+    margin-right: 1rem;
+}
