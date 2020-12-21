@@ -4,38 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post</title>
+    <script src="https://kit.fontawesome.com/f376481e15.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/post.css">
 </head>
-<body>
+<body id="post-body">
     <header class="header-container">
         <nav>  
             <ul class="nav-list">  
                 <li class="nav-item logo"><a href="#"></a><i class="fas fa-mountain"></i></li>
-                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="post.html">Recent Post</a></li>
                 <button class="nav-item">Subscribe</button>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div>
-            <div>
-                <img src="images/cesar.jpg" alt="Picture of Author">
-            </div>
-
-            <p>Author Name</p>
-
-            <p>Author Description</p>
-
-            <nav>
-                <ul>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Linkdin</a></li>
-                </ul>
-            </nav>
-        </div>
+    <main class="main-container blog-post">
+        <h1>Blog Title</h1>
 
         <article>
             <section>
@@ -76,6 +62,28 @@
             </section>
         </article>
     </main>
+
+    <div class="author-container">
+        <div class="author-pic">
+            <img src="images/cesar.jpg" alt="Picture of Author">
+            <ul class="author-info">
+                <li class="author-name"><p>Cesar Jaramillo</p></li>
+                <li><p>Web Developer</p></li>
+            </ul>
+        </div>
+
+        <p class="author-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium magni animi eos expedita saepe, necessitatibus ea recusandae odit debitis repudiandae quod eum officiis quos consequatur. Hic laborum esse ipsam?
+        </p>
+
+        <nav class="author-social">
+            <ul>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Linkdin</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <footer class="footer-container">
         <nav>
