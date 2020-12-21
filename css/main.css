@@ -1,11 +1,19 @@
+@import url("navbar.css");
+@import url("footer.css");
+@import url("post.css");
+
 * {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
+    color: #1b4332;
     width: 100vw;
     letter-spacing: 1px;
+    line-height: 1.5;
+    text-decoration: none;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -16,69 +24,7 @@ body {
     background-color: whitesmoke;
 }
 
-
-a {
-    text-decoration: none;
-}
-
-.header-container {
-    grid-area: hd;
-}
-
-.main-container {
-    grid-area: main;
-    margin: 50px auto;
-}
-
-.footer-container {
-    grid-area: footer;
-    background-color: #1b4332;
-}
-/* Main nav-bar */
-
-.nav-list {
-    background-color: #40916c;
-    box-shadow: 0 0 10px #40916c;
-    border-radius: 0.2rem;
-    padding: 1rem 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.nav-item {
-    list-style: none;
-    margin: 0 12px;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: black;
-    transition: all 200ms ease-in;
-}
-
-.nav-item a:hover {
-    color: #95D5B2;
-}
-
-button {
-    background: none;
-    color: #1b4332;
-    border: 2px solid;
-    border-radius: 0.5em;
-    padding: 0.5em 1.5em;
-    
-}
-
-button:hover {
-    border-color: #95D5B2;
-    color: #95D5B2;
-    box-shadow: 0 0.5em 0.5em -0.4em #95D5B2;
-    transform: translateY(-0.25);
-    cursor: pointer;
-}
+/* Home page banner */
 
 .banner {
     background-image: url("../images/sunset.jpeg");
@@ -97,6 +43,11 @@ button:hover {
 }
 
 /* card blog section */
+
+.main-container {
+    grid-area: main;
+    margin: 50px auto;
+}
 
 .card-row {
     display: flex;
@@ -145,37 +96,10 @@ button:hover {
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
 
-/* footer section */
-
-.footer-nav {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    margin: 1rem 0;
-    padding-left: 0;
-}
-
-.social-item {
-    color: #40916c;
-}
-
-.copyright {
-    color: #40916c;
-    text-align: center;
-    margin: 0 0 1rem 1.5rem;
-}
 
 /* media query */
 
 @media (min-width: 600px) {
-    .nav-item {
-        font-size: 16px;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
     .banner {
         background-image: url("../images/mtiron.jpeg");
     }
