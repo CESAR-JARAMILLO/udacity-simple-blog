@@ -1,0 +1,24 @@
+/* footer section */
+
+.footer-container {
+    grid-area: footer;
+    background-color: #1b4332;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 1rem 0;
+    padding-left: 0;
+}
+
+.social-item {
+    color: #40916c;
+}
+
+.copyright {
+    color: #40916c;
+    text-align: center;
+    margin: 0 0 1rem 1.5rem;
+}
