@@ -36,7 +36,7 @@ form {
     width: 80%;
 }
 
-button:hover {
+.form-button:hover {
     border-color: #40916c;
     color: #40916c;
     box-shadow: 0 0.5em 0.5em -0.4em #40916c;
