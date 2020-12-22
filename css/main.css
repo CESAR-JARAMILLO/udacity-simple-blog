@@ -1,6 +1,7 @@
 @import url("navbar.css");
 @import url("footer.css");
 @import url("post.css");
+@import url("form.css");
 
 * {
     padding: 0;
@@ -21,7 +22,11 @@ body {
     "hd"
     "main"
     "footer";
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Home page banner */
@@ -36,7 +41,7 @@ body {
 
 .banner h1 {
     display: flex;
-    color: white;
+    color: #fff;
     justify-content: center;
     text-align: center;
     padding-top: 3.5rem;
@@ -65,10 +70,25 @@ body {
 }
 
 .card-header {
-    background-image: url("../images/mtbaldy.jpeg");
     background-size: cover;
     height: 200px;
     border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-pic-1 {
+    background-image: url("../images/mtbaldy.jpeg");
+}
+
+.card-pic-2 {
+    background-image: url("../images/snow.jpeg");
+}
+
+.card-pic-3 {
+    background-image: url("../images/beach.jpeg");
+}
+
+.card-pic-4 {
+    background-image: url("../images/henninger.jpeg");
 }
 
 .card-body {
