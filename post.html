@@ -14,7 +14,7 @@
                 <li class="nav-item logo"><a href="#"></a><i class="fas fa-mountain"></i></li>
                 <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="post.html">Recent Post</a></li>
-                <button class="nav-item">Subscribe</button>
+                <a href="form.html"><button class="nav-item">Subscribe</button></a>
             </ul>
         </nav>
     </header>
@@ -23,8 +23,8 @@
         <h1 class="blog-title">Blog Title</h1>
 
         <article>
-            <section>
-                <h2>Subheading</h2>
+            <section class="blog-card">
+                <h2>Heading</h2>
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto praesentium quae nesciunt neque maiores, mollitia corrupti beatae, tenetur saepe eaque porro repudiandae consectetur earum reprehenderit deserunt nisi natus distinctio!
@@ -41,8 +41,16 @@
                 </p>
             </section>
 
-            <section>
-                <h2>Subheading</h2>
+            <figure>
+                <img class="blog-image" src="images/sign.jpeg" alt="entering sheep mountain wilderness sign">
+                
+                <figcaption class="blog-image-txt">
+                    Sheep Mountain Wilderness
+                </figcaption>
+            </figure>
+
+            <section class="blog-card">
+                <h3>Subheading</h3>
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto praesentium quae nesciunt neque maiores, mollitia corrupti beatae, tenetur saepe eaque porro repudiandae consectetur earum reprehenderit deserunt nisi natus distinctio!
@@ -64,10 +72,20 @@
                 </ul>
             </section>
 
-        </article>
-    </main>
+            <figure>
+                <img class="blog-image" src="images/gear.jpeg" alt="Hiking food and equipment">
+                
+                <figcaption class="blog-image-txt">
+                    Hiking food and equipment
+                </figcaption>
+            </figure>
 
-    <div class="author-container">
+        </article>
+
+        <hr>
+    </main> 
+
+    <aside class="author-container">
         <div class="author">
             <img src="images/cesar.jpg" alt="Picture of Author">
             <ul class="author-info">
@@ -87,7 +105,7 @@
                 <li><a href="">Linkdin</a></li>
             </ul>
         </nav>
-    </div>
+    </aside>
 
     <footer class="footer-container">
         <nav>
